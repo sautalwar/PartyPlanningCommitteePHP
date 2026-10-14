@@ -1,16 +1,4 @@
 ---
-# Fill in the fields below to create a basic custom agent for your repository.
-# The Copilot CLI can be used for local testing: https://gh.io/customagents/cli
-# To make this agent available, merge this file into the default repository branch.
-# For format details, see: https://gh.io/customagents/config
-
-name:
-description:
----
-
-# My Agent
-
----
 name: php-security
 description: Reviews PHP code for security vulnerabilities that CodeQL cannot see (SQL injection, XSS, command injection, file inclusion, path traversal, unsafe deserialization, unsafe uploads, dynamic calls, weak hashing, missing authorization). Follows user input from where it enters to where it is used, reports only what it can prove with file and line, and proposes minimal fixes. Uses Psalm output when it exists instead of re-scanning.
 tools: ["read", "search", "edit", "execute"]
